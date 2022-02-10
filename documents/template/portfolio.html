@@ -22,8 +22,6 @@
 	<link rel="stylesheet" href="css/main.css">
     <link href="css/custom.css" rel="stylesheet">
 
-	<script src="//use.edgefonts.net/bebas-neue.js"></script>
-
     <!-- Custom Fonts & Icons -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/icomoon-social.css">
@@ -34,7 +32,7 @@
 
 </head>
 
-<body>
+    <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -52,88 +50,119 @@
                 <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Basica"></a>
             </div>
             <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact-us.html">Contact</a></li>
-                </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact-us.html">Contact</a></li>
+              </ul>
             </div>
         </div>
     </header><!--/header-->
 
+        <!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Our Portfolio</h1>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
+        <div class="section">
+	    	<div class="container">
+				<div class="row">
+				<div class="col-sm-12">
+						<h2>We are leading company</h2>
+						<h3>Specializing in Wordpress Theme Development</h3>
+						<p>
+							Donec elementum mi vitae enim fermentum lobortis. In hac habitasse platea dictumst. Ut pellentesque, orci sed mattis consequat, libero ante lacinia arcu, ac porta lacus urna in lorem. Praesent consectetur tristique augue, eget elementum diam suscipit id. Donec elementum mi vitae enim fermentum lobortis.
+						</p>
 
-    <section id="main-slider" class="no-margin">
-        <div class="carousel slide">
-            <ol class="carousel-indicators">
-                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#main-slider" data-slide-to="1"></li>
-                <li data-target="#main-slider" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                
-                <!-- Slide des works -->
-                @include('works.slide', ['works' => \App\Models\Work::orderBy('created_at','desc')->take(3)->get()])
+					</div>
+				</div>
+			</div>
+		</div>
 
-            </div><!--/.carousel-inner-->
-        </div><!--/.carousel-->
-        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
-            <i class="icon-angle-left"></i>
-        </a>
-        <a class="next hidden-xs" href="#main-slider" data-slide="next">
-            <i class="icon-angle-right"></i>
-        </a>
-    </section><!--/#main-slider-->
+        <div class="section">
+	    	<div class="container">
+				<div class="row">
+
+			<ul class="grid cs-style-2">
+	        	<div class="col-md-4 col-sm-6">
+					<figure>
+						<img src="img/portfolio/4.jpg" alt="img04">
+						<figcaption>
+							<h3>Settings</h3>
+							<span>Jacob Cummings</span>
+							<a href="portfolio-item.html">Take a look</a>
+						</figcaption>
+					</figure>
+	        	</div>
+				<div class="col-md-4 col-sm-6">
+					<figure>
+						<img src="img/portfolio/1.jpg" alt="img01">
+						<figcaption>
+							<h3>Camera</h3>
+							<span>Jacob Cummings</span>
+							<a href="portfolio-item.html">Take a look</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<figure>
+						<img src="img/portfolio/2.jpg" alt="img02">
+						<figcaption>
+							<h3>Music</h3>
+							<span>Jacob Cummings</span>
+							<a href="portfolio-item.html">Take a look</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<figure>
+						<img src="img/portfolio/5.jpg" alt="img05">
+						<figcaption>
+							<h3>Safari</h3>
+							<span>Jacob Cummings</span>
+							<a href="portfolio-item.html">Take a look</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<figure>
+						<img src="img/portfolio/3.jpg" alt="img03">
+						<figcaption>
+							<h3>Phone</h3>
+							<span>Jacob Cummings</span>
+							<a href="portfolio-item.html">Take a look</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<figure>
+						<img src="img/portfolio/6.jpg" alt="img06">
+						<figcaption>
+							<h3>Game Center</h3>
+							<span>Jacob Cummings</span>
+							<a href="portfolio-item.html">Take a look</a>
+						</figcaption>
+					</figure>
+				</div>
+			</ul>
 
 
-
-
-
-		<!-- Our Portfolio -->
-
-        <div class="section section-white">
-	        <div class="container">
-	        	<div class="row">
-
-				<div class="section-title">
-				<h1>Our Recent Works</h1>
 				</div>
 
-                    <!-- Liste des works -->
-                    @include('works.index', ['works' => \App\Models\Work::orderBy('created_at','desc')->take(3)->get()])
-			
-	        	</div>
-	        </div>
-	    </div>
-		<!-- Our Portfolio -->
+				<ul class="pager">
+				  <li><a href="#">More works</a></li>
+				</ul>
 
-<hr>
-
-<!-- Our Articles -->
-<div class="section">
-  <div class="container">
-    <div class="row">
-      <!-- Featured News -->
-      <div class="col-sm-6 featured-news">
-        <h2>Latest Blog Posts</h2>
-            
-        <!-- Liste des posts -->
-        @include('posts.index', ['posts'=> \App\Models\Post::orderBy('created_at','desc')->take(3)->get()])
-      </div>
-      <!-- End Featured News -->
-
-
-      <!-- Latest News FB -->
-      <div class="col-sm-6 latest-news">
-        <h2>Lastest Twitter News</h2>
-        <a class="twitter-timeline" data-height="800" href="https://twitter.com/PascalL79487231?ref_src=twsrc%5Etfw">Tweets by PascalL79487231</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-      <!-- End Featured News -->
-    </div>
-  </div>
-</div>
+			</div>
+		</div>
 
 	    <!-- Footer -->
 	    <div class="footer">
@@ -182,6 +211,17 @@
 		<!-- Scrolling Nav JavaScript -->
 		<script src="js/jquery.easing.min.js"></script>
 		<script src="js/scrolling-nav.js"></script>
+
+		<!-- Portfolio Thumbnail Hover Effect JavaScript -->
+		<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+			});
+		</script>
+
 
     </body>
 </html>

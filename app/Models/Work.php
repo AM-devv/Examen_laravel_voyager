@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Work extends Model
 {
     use HasFactory;
+    public function client(){
+        return $this->belongsTo('App\Models\Client', 'client_id', 'id');
+    }
 }
