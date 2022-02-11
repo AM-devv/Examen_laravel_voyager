@@ -12,7 +12,7 @@
 							</div>
 
 							<div class="single-post-info">
-								<i class="glyphicon glyphicon-time"></i>{{ $post->created_at }} <a href="#" title="Show Comments"><i class="glyphicon glyphicon-comment"></i>11</a>
+								<i class="glyphicon glyphicon-time"></i>{{ $post->created_at->format('d M Y') }} <a href="#" title="Show Comments"><i class="glyphicon glyphicon-comment"></i>11</a>
 							</div>
 
 							<div class="single-post-content">
