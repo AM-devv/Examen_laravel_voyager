@@ -26,3 +26,8 @@ Route::group(['prefix' => 'admin'], function () {
 Route::get('/portfolio', function() {
     return view ('portfolio');
 })->name('portfolio');
+
+
+Route::get('/blog', function(){
+    return view ('blog');
+})->name('blog');
