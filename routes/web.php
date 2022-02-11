@@ -36,3 +36,6 @@ Route::get('/blog', function(){
 Route::get('/contact', function(){
     return view ('contact');
 })->name('contact');
+
+
+Route::get('/works/{id}/{title}', [App\Http\Controllers\WorksController::class, 'show'])->name('detail');
