@@ -5,7 +5,7 @@
                             <figcaption>
                                 <h3>{{ $work->title }}</h3>
                                 <span>{{ $work->client->name }}</span>
-                                <a href="{{ route('detail', ['id' => $work->id, 'title' => $work->title]) }}">Take a look</a>
+                                <a href="{{ route('detail', ['id' => $work->id, 'title' => Str::slug($work->title, '-')]) }}">Take a look</a>
                             </figcaption>
                         </figure>
                     </div>
