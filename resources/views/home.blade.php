@@ -39,7 +39,7 @@
 				</div>
 
                     <!-- Liste des works -->
-                    @include('works.index', ['works' => \App\Models\Work::orderBy('created_at','desc')->take(3)->get()])
+                    @include('works.index', ['works' => \App\Models\Work::orderBy('created_at','desc')->take(6)->get()])
 			
 	        	</div>
 	        </div>
