@@ -39,3 +39,6 @@ Route::get('/contact', function(){
 
 
 Route::get('/works/{id}/{title}', [App\Http\Controllers\WorksController::class, 'show'])->name('detail');
+
+
+Route::get('/ajax/older-works', [App\Http\Controllers\WorksController::class, 'ajaxOlders'])->name('ajaxOlderworks');

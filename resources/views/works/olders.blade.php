@@ -1,4 +1,3 @@
-            <ul id="turlututu" class="grid cs-style-3">
                 @foreach ($works as $work)
                     <div class="col-md-4 col-sm-6">
                         <figure>
@@ -10,5 +9,4 @@
                             </figcaption>
                         </figure>
                     </div>
-                @endforeach    
-			</ul>
+                @endforeach

@@ -40,10 +40,14 @@
 				</div>
 
 				<ul class="pager">
-				  <li><a href="#">More works</a></li>
+				  <li><a id="older-works" href="#">More works</a></li>
 				</ul>
 
 			</div>
 		</div>
 
+@endsection
+
+@section('script')
+	<script src="{{ asset('js/works/lastest.js') }}"></script>
 @endsection
