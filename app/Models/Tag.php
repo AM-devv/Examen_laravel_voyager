@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Tag extends Model
 {
     use HasFactory;
+    public function works(){
+        return $this->belongsToMany('App\Models\Work', 'works_has_tags');
+    }
 }

@@ -11,4 +11,7 @@ class Work extends Model
     public function client(){
         return $this->belongsTo('App\Models\Client', 'client_id', 'id');
     }
+    public function tags(){
+        return $this->belongsToMany('App\Models\Tag', 'works_has_tags');
+    }
 }

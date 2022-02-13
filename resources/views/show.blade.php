@@ -42,8 +42,12 @@
 						</p>
 						<h3>Project Details</h3>
 						<p><strong>Client: </strong>{{ $work->client->name }}</p>
-						<p><strong>Date: </strong>August 21, 2015</p>
-						<p><strong>Tags: </strong>Photography, Art, Graphics</p>
+						<p><strong>Date: </strong>{{ $work->created_at->format('d F Y') }}</p>
+						<p><strong>Tags: </strong>
+					@foreach ($work->tags as $tag)
+						<li>{{ $tag->name }}</li>
+					@endforeach
+					</p>
 	    			</div>
 	    			<!-- End Product Summary & Options -->
 
